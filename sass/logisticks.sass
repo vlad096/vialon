@@ -1,0 +1,87 @@
+@import 'responsive'
+
+.capability
+	&--logisticks
+		.capability__subtitle
+			&:after
+				background-color: #7ed321
+		.capability__subtitle
+			+media(smx)
+				min-height: auto
+	&--mob
+		background-color: #fff
+		.capability__subtitle
+			min-height: 85px
+			+media(md)
+				min-height: 64px	
+			+media(smx)
+				min-height: auto
+		.capability__item
+			width: calc(100% / 5 - 60px)
+			+media(mdx)
+				width: calc(100% / 3 - 60px)
+			+media(md)
+				width: calc(100% / 2 - 60px)
+			+media(smx)
+				width: 100%
+
+
+.planning
+	&__title
+		font-size: 55px
+		font-weight: 100
+		line-height: 64px
+		color: #000000
+		font-family: "HelveticaNeue"
+		padding-top: 60px
+		padding-bottom: 54px
+		b
+			font-weight: 700
+	&__wrap
+		display: flex
+		align-items: center
+		max-width: 980px
+		margin: 0 auto
+		flex-wrap: wrap
+		align-items: center
+		+media(smdx)
+			display: block
+	&__item
+		width: calc(100% / 3 - 40px)
+		position: relative
+		padding-left: 30px	
+		color: #000000
+		font-size: 24px
+		line-height: 26px
+		margin-right: 20px
+		margin-left: 20px
+		font-weight: 100
+		font-family: "HelveticaNeue"
+		display: flex
+		flex-direction: column
+		+media(smdx)
+			margin-bottom: 70px
+		&:after
+			position: absolute
+			content: ' '
+			border: 60px solid transparent
+			border-left: 120px solid  #d8d8d8
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			z-index: -1
+		b
+			font-weight: 700
+			text-transform: uppercase
+			display: block
+	&__image
+		margin-top: 70px
+		img
+			display: block
+			width: 100%
+
+.logisticks
+	&--wrap
+		position: relative
+	&--image
+		right: 0px

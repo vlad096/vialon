@@ -1,0 +1,282 @@
+@import 'responsive'
+
+.reason
+	position: relative
+	z-index: 0
+	background-color: #fff
+	&__title
+		font-size: 56px
+		line-height: 1.1
+		font-weight: 100
+		color: #000000
+		font-family: "HelveticaNeue"
+		padding-bottom: 7px	
+		+media(sm)
+			font-size: 47px
+		b
+			font-weight: 700
+	&__block
+		position: relative
+		padding-top: 140px
+		padding-bottom: 100px
+		+media(md)
+			padding-bottom: 144px
+		+media(sm)
+			padding: 40px 0px	
+		&:after
+			position: absolute
+			z-index: 1
+			content: ' '
+			max-width: 760px
+			width: 100%	
+			top: 0px
+			left: 0px
+			right: 0px
+			min-height: 760px
+			max-height: 760px
+			margin: 0 auto
+			border-radius: 50%
+			background: radial-gradient(circle,  #519cf8 25%, 
+			rgba(81, 156, 248, 0.5) 25%, rgba(81, 156, 248, 0.5) 41%,  
+			rgba(51, 212, 237, 0.2) 41%,  rgba(51, 212, 237, 0.2) 58%, 
+			rgba(51, 212, 237, 0.1) 58%)
+			+media(sm)
+				top: calc(50% - 380px)
+	&__subtitle
+		font-size: 24px
+		line-height: 1.1
+		text-transform: uppercase
+		font-weight: 700
+		color: #000000
+		font-family: "HelveticaNeue"
+		margin-bottom: 17px	
+		min-height: 50px
+		+media(md)
+			font-size: 20px	
+	p
+		font-size: 14px
+		font-weight: 400
+		line-height: 18px
+		color: #4a4a4a
+		font-family: 'Roboto'
+		margin-bottom: 35px	
+		+media(sm)
+			margin-bottom: 15px	
+	&__wrap
+		max-width: 874px
+		width: 100%	
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin: 0 auto
+		position: relative
+		z-index: 2
+		+media(sm)
+			flex-direction: column
+			max-width: 550px
+			width: 100%
+	&__item
+		width: calc(100% / 2 - 36px)
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.15)
+		display: flex
+		flex-direction: column
+		border-radius: 8px
+		background-color: #ffffff
+		margin: 0 18px 36px
+		min-height: 223px	
+		padding: 25px
+		+media(md)
+			padding: 20px	
+			margin-bottom: 20px	
+		+media(sm)
+			width: 100%
+			margin: 0px
+			margin-bottom: 20px	
+
+		&:nth-child(odd)
+			text-align: right
+			padding-left: 50px	
+			+media(sm)
+				text-align: left
+				padding-left: 20px
+
+		&:nth-child(even)
+			padding-right: 50px	
+			+media(sm)
+				padding-right: 20px
+
+.work
+	counter-reset: work
+	background-color: rgba( 255, 255, 255, 0.89)
+	&__title
+		font-size: 56px
+		font-weight: 100
+		line-height: 1.1
+		font-family: "HelveticaNeue"
+		color: #000000
+		padding-top: 105px
+		padding-bottom: 68px
+		b
+			font-family: "HelveticaNeue"
+			font-weight: 700
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		border-top: 2px solid rgba(155, 155, 155, 0.21)
+		margin-left: 32px
+		+media(md)
+			border: none
+	&__item
+		position: relative
+		width: 25%
+		padding: 17px 50px 125px
+		+media(md)
+			width: 50%
+			padding-bottom: 85px
+		+media(smx)
+			width: 100%
+			padding-right: 24px
+			padding-left: 24px
+		&::before 
+			position: absolute
+			top: 0
+			left: 0
+			transform: translate(-50%, -50%)
+			display: block
+			font-size: 70px
+			font-weight: 700
+			line-height: 1
+			text-transform: uppercase
+			color: #d0021b
+			font-family: "HelveticaNeue"
+			counter-increment: work
+			content: counter(work)
+			+media(md)
+				top: calc(50% - 35px)
+	&__subtitle
+		font-size: 18px
+		font-weight: 500
+		line-height: 20px
+		color: #000000
+		font-family: "HelveticaNeue"
+
+
+.capability
+	&__title
+		font-size: 56px
+		font-weight: 100
+		line-height: 1.1
+		color: #000000
+		font-family: "HelveticaNeue"
+		padding-top: 90px
+		padding-bottom: 62px
+		+media(smx)
+			font-size: 36px	
+		b
+			font-weight: 700
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		padding-left: 60px
+		margin-right: -30px
+		margin-left: -30px
+		+media(md)
+			margin: 0px auto
+			padding-left: 0px	
+		+media(smx)
+			margin: 0px
+			padding-left: 0px
+	&__item
+		width: calc(100% / 4 - 60px)
+		margin-right: 30px
+		margin-left: 30px
+		padding-bottom: 115px
+		+media(md)
+			width: calc(100% / 2 - 60px)
+			padding-bottom: 55px
+		+media(smx)
+			width: 100%
+			margin: 0px
+		p
+			font-size: 14px
+			font-weight: 400
+			line-height: 18px
+			color: #4a4a4a
+			font-family: 'Roboto'
+			padding-top: 30px
+			+media(md)
+				padding-top: 15px
+
+	&__subtitle
+		font-size: 18px
+		font-weight: 700
+		line-height: 1.1
+		color: #000000
+		font-family: "HelveticaNeue"
+		padding-bottom: 28px
+		position: relative
+		+media(lgxs)
+			min-height: 64px
+		+media(smx)
+			min-height: auto
+			padding-bottom: 20px
+		&:after
+			position: absolute
+			content: ' '
+			bottom: 0px
+			left: 0px
+			width: 50px
+			height: 6px
+			background-color: #bd10e0
+
+.solution
+	background-image: linear-gradient(180deg, #e8faf9, #e1f2fe)
+	&__title
+		font-size: 56px
+		font-weight: 100
+		line-height: 1.1
+		color: #4a4a4a
+		font-family: "HelveticaNeue"
+		padding-top: 65px
+		padding-bottom: 75px
+		+media(sm)
+			font-size: 47px	
+		b
+			font-weight: 700
+	&__wrap
+		display: flex
+		margin-right: -80px
+		margin-left: -80px
+		+media(md)
+			display: block
+			margin: 0px
+	&__item
+		width: calc(100% - 160px)
+		margin-right: 80px
+		margin-left: 80px
+		+media(md)
+			width: 100%
+			margin: 0px
+		p
+			font-size: 14px
+			font-weight: 400
+			line-height: 18px
+			color: #4a4a4a
+			font-family: 'Roboto'
+			margin-top: 19px
+			padding-bottom: 80px
+			text-align: center
+	&__subtitle
+		font-size: 20px
+		line-height: 1
+		color: #4a4a4a	
+		font-weight: 700
+		font-family: "HelveticaNeue"
+		text-align: center
+	&__image
+		margin-top: 25px
+		text-align: center
+		min-height: 219px
+		display: flex
+		justify-content: center
+		align-items: center

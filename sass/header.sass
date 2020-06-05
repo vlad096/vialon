@@ -1,0 +1,181 @@
+@import 'responsive'
+
+.main-header
+	position: relative
+	background-color: #fff
+	box-shadow: 0 0 37px rgba(0, 0, 0, 0.3)
+	z-index: 1
+	&__block
+		position: relative
+		display: flex
+		align-items: center
+		padding: 10px
+		+media(mdx)
+			flex-direction: column
+			padding: 0px
+			padding-top: 10px
+	&__logo
+		margin-right: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-shrink: 0
+		img
+			display: block
+	&__description
+		font-size: 16px
+		color: #2e2e2e
+		text-transform: uppercase
+		padding-right: 10px
+	&__navigation
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__wrap
+		display: flex
+
+	&__list
+		display: flex
+		align-items: center
+		+media(sm)
+			display: none
+			width: 100%	
+			background-color: #fff
+			top: 100%
+			left: 0
+			position: absolute
+			z-index: 2
+			padding-left: 0px	
+			max-height: calc(100vh - 70px)
+			border-bottom: 1px solid #113f73
+			overflow-y: auto
+			overflow-x: hidden
+
+	&__link
+		font-size: 16px
+		line-height: 1.2	
+		display: block
+		color: #666666
+		font-weight: 500
+		padding: 5px 15px 5px 15px
+		text-transform: uppercase
+		transition: 0.3s color, 0.3s background-color
+		+media(lgxs)
+			padding: 10px 8px
+		&:hover
+			color: #4a4a4a
+			+media(sm)
+				background-color: #ee3c63
+				color: #fff
+		&--active
+			text-transform: uppercase
+			color: #111
+			+media(sm)
+				background-color: #ee3c63
+				color: #fff
+	&__content
+		display: flex
+		align-items: center
+		margin-left: 50px	
+		+media(mdx)
+			margin: 10px
+		+media(sm)
+			order: -1
+	&__box
+		display: flex
+		margin-left: auto
+		+media(mdx)
+			justify-content: center
+			margin: 0px
+			flex-wrap: wrap
+	&__telephone
+		font-size: 16px
+		text-transform: uppercase
+		color: #4a4a4a
+		font-weight: 500
+		margin-right: 20px
+
+.mobile-wrap
+	display: none
+	align-items: center
+	justify-content: space-between
+	cursor: pointer
+	+media(sm)
+		display: flex
+		width: 100%
+		padding: 7.5px 30px
+		padding-right: 20px
+		padding-left: 20px
+
+.line-burger
+	display: block
+	position: absolute
+	top: 50%
+	left: 0
+	width: 25px
+	height: 3px
+	background-color:  #4a4a4a
+	transition: 0.5s width
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		width: 25px
+		height: 3px
+		background-color: #4a4a4a
+		left: 0
+		transition: 0.5s
+	&:after
+		top: calc(100% + 5px)
+	&:before
+		bottom: calc(100% + 5px)
+
+.line-active
+	width: 0
+	&:after
+		top: 9px
+		transform: rotate(-45deg)
+		transform-origin: 0 0
+	&:before
+		bottom: 9px
+		transform: rotate(45deg)
+		transform-origin: 0 100%
+
+.main-nav__toggle
+	position: relative
+	cursor: pointer
+	display: none
+	width: 25px
+	height: 25px
+	margin-top: -5px
+	+media(sm)
+		display: block
+
+.language-chooser
+	display: flex
+	+media(smx)
+		justify-content: center
+	li
+		font-size: 16px
+		line-height: 1.7
+		padding: 0px 10px
+		text-transform: uppercase
+		&:not(:last-child)
+			position: relative
+			&:after
+				position: absolute
+				content: '|'
+				color: #4a4a4a
+				top: 0px
+				right: 0px
+		a
+			color: #4a4a4a
+			&:hover
+				text-decoration: underline
+				
+		&.active a
+			color: #4a4a4a
+			font-weight: 500
+			&:hover
+				text-decoration: none

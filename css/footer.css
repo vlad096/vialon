@@ -1,0 +1,18 @@
+.social__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.social__item {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+

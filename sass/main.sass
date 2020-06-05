@@ -1,0 +1,767 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	line-height: 1.5
+	width: 100%
+	overflow-x: hidden
+	background-color: #f0f0f0
+	font-size: 14px
+	font-style: normal
+	font-weight: 400
+	font-family: 'Roboto', sans-serif
+* 
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+	
+.container
+	max-width: 1220px
+	width: 100%
+	margin: 0 auto
+	padding: 0 10px
+	+media(lgsm)
+		padding: 0 10px
+	&--data
+		max-width: 680px
+	&--user
+		max-width: 822px
+	&--about
+		padding: 0px
+		background-color: #fff
+	&--header
+		padding: 0px
+		+media(lgsm)
+			padding: 0px
+	
+
+.about
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	position: relative
+	background-color: #fff
+	overflow: hidden
+	&__image
+		position: absolute
+		content: ' '
+		top: 85px
+		top: 232px
+		right: -70px
+		z-index: 2
+		+media(lgsm)
+			position: static
+			text-align: right
+	&__wrap
+		padding-bottom: 190px
+		+media(lgsm)
+			padding-bottom: 40px
+	&__title
+		max-width: 828px
+		width: 100%
+		font-size: 56px
+		font-weight: 700
+		line-height: 1.1
+		color: #4a4a4a
+		font-family: "HelveticaNeue", sans-serif
+		padding-top: 60px
+		padding-bottom: 38px
+		+media(lgsm)
+			max-width: 100%
+		+media(lgs)
+			font-size: 54px
+		+media(sm)
+			font-size: 28px
+		b
+			color: #000
+		span
+			font-weight: 100
+			display: block
+		.font-light
+			display: inline
+			font-weight: 200
+			color: #000
+
+
+	&__text
+		max-width: 429px
+		width: 100%	
+		margin-bottom: 25px
+		+media(lgsm)
+			max-width: 100%
+		&--wiatag
+			max-width: 519px
+			+media(lgs)
+				max-width: 400px
+		p	
+			font-size: 14px
+			font-weight: 400
+			line-height: 18px
+			color: #4a4a4a
+			font-family: 'Roboto', sans-serif
+			padding-bottom: 15px
+	.info__links
+		display: block
+		a
+			display: block
+			margin-bottom: 25px
+
+	&--fleetrun
+		&+.reason .reason__title
+		
+		.about__title
+			max-width: 753px
+			padding-bottom: 80px
+			+media(lgsm)
+				padding-bottom: 40px
+				max-width: 100%
+		.about__image
+			top: 180px
+		.about__text
+			max-width: 642px
+			+media(lgsm)
+				max-width: 100%
+		.info__links
+			display: flex
+			flex-direction: row
+			margin-right: -13px	
+			margin-left: -13px	
+			+media(md)
+				flex-direction: column
+				margin: 0px	
+			a
+				margin-right: 13px	
+				margin-left: 13px
+
+				+media(md)
+					margin: 0px
+					margin-bottom: 25px		
+				&:nth-child(1)
+					background-color: #519cf8
+					&:hover
+						background-color: #23446b
+					&:hover
+				&:nth-child(2)
+					background-color: #33d4ed
+					&:hover
+						background-color: #228999
+				&:nth-child(3)
+					background-color: #097c00
+					&:hover
+						background-color: #054700
+				&:nth-child(4)
+					background-color: #535353	
+					&:hover
+						background-color: #2b2b2b
+	&--wiatag
+		.about__title
+			max-width: 761px
+			+media(lgsm)
+				max-width: 100%
+		.about__text
+			max-width: 519px
+			+media(lgsm)
+				max-width: 100%
+		.about__image
+			top: 80px
+		.info__links a
+			&:nth-child(1)
+				background-color: #519cf8
+				&:hover
+					background-color: #3769a6
+	&--hecterra
+		.about__title
+			max-width: 530px
+			padding-bottom: 57px
+			+media(lgsm)
+				max-width: 100%
+		.about__text
+			max-width: 591px
+			+media(lgsm)
+				max-width: 100%
+		.about__image
+			top: 120px
+			right: 0px
+			text-align: left
+	&--logisticks
+		.about__title
+			max-width: 640px
+		.mobile__links
+			padding: 0px
+			+media(lgxs)
+				padding-bottom: 35px
+		.about__wrap
+			padding-bottom: 100px
+			+media(lgxs)
+				padding-bottom: 10px
+		.info__links
+			display: flex
+			margin-left: -14px
+			margin-right: -14px
+			a
+				margin-right: 14px
+				margin-left: 14px
+				max-width: 200px
+				width: 100%
+				&:nth-child(1)
+					background-color: #4a90e2
+					&:hover
+						background-color: #376ba6
+				&:nth-child(2)
+					background-color: #50e3c2
+					&:hover
+						background-color: #3aa68e
+		.about__image
+			right: 0px
+			text-align: left
+		
+.system
+	margin-top: -30px
+	background-color: #fff
+	padding-bottom: 55px
+	+media(lgsm)
+		margin-top: 0px
+	&__title
+		font-size: 56px
+		line-height: 1.1
+		color: #000000
+		font-family: "HelveticaNeue", sans-serif
+		font-weight: 100
+		font-style: normal
+		+media(sm)
+			font-size: 52px
+		b
+			font-weight: 700
+			display: block
+
+	&__subtitle
+		max-width: 220px
+		font-size: 20px
+		font-weight: 500
+		line-height: 22px
+		color: #222222
+		font-family: 'Roboto'
+		font-weight: 500
+	&__text
+		max-width: 470px
+		width: 100%
+		margin-top: 25px
+	&__desc
+		font-size: 13px
+		font-weight: 400
+		line-height: 18px
+		color: #4a4a4a
+		font-family: 'Roboto'
+	&__mob
+		background-image: url(img/system/bg.png)
+		background-size: cover
+		background-position: top center
+		min-height: 640px
+		position: relative
+		+media(lgsm)
+			position: static
+		.system__item
+			&:nth-child(2)
+				position: absolute
+				left: 12%
+				padding-top: 65px
+			&:nth-child(3)
+				position: absolute
+				left: 3%
+				padding-top: 225px
+			&:nth-child(4)
+				position: absolute
+				left: 3%
+				padding-top: 427px
+			&:nth-child(5)
+				position: absolute
+				left: 29%
+				padding-top: 175px
+			&:nth-child(6)
+				position: absolute
+				left: 27%
+				padding-top: 335px
+			&:nth-child(7)
+				position: absolute
+				left: 44%
+				padding-top: 60px
+			&:nth-child(8)
+				position: absolute
+				left: 49%
+				padding-top: 270px
+			&:nth-child(9)
+				position: absolute
+				left: 40%
+				padding-top: 450px
+			&:nth-child(10)
+				position: absolute
+				left: 69%
+				padding-top: 5px
+			&:nth-child(11)
+				position: absolute
+				left: 77%
+				padding-top: 110px
+			&:nth-child(12)
+				position: absolute
+				left: 81%
+				padding-top: 280px
+			&:nth-child(13)
+				position: absolute
+				left: 71%
+				padding-top: 415px
+
+	&__item
+		display: flex
+		align-items: center
+		padding-bottom: 5px
+	&__picture
+		margin-right: 11px
+	&__wrap
+		+media(lgsm)
+			padding-bottom: 15px
+
+
+
+.mobile
+	background-color: #fff
+	position: relative
+	+media(lgsm)
+		position: static
+	&__title
+		max-width: 441px
+		width: 100%
+		font-size: 56px
+		line-height: 1.1
+		font-weight: 700
+		color: #000000
+		font-family: "HelveticaNeue", sans-serif
+	&__text
+		margin-top: 36px
+		margin-bottom: 40px
+		p
+			font-size: 14px
+			font-weight: 400
+			line-height: 1.2
+			color: #4a4a4a
+			font-family: 'Roboto', sans-serif
+	&__wrap
+		display: flex
+		overflow: hidden
+		padding-top: 177px
+		+media(lgsm)
+			display: block
+		+media(sm)
+			padding-top: 75px
+	&__block
+		width: 56%
+		+media(lgsm)
+			width: 100%
+	&__bg
+		max-width: 755px
+		position: absolute
+		right: -80px
+		top: -20px
+		+media(lgsm)
+			position: static
+	&__links
+		display: flex
+		padding-bottom: 170px
+		+media(lgsm)
+			padding-bottom: 100px
+		+media(md)
+			margin: 0 auto
+			justify-content: center
+		+media(smx)
+			display: block
+		a
+			display: inline-block
+			+media(smx)
+				margin: 0px
+				margin-bottom: 25px
+
+			&:first-child
+				margin-right: 30px
+
+		&--small
+			margin: 0 -14px
+
+			a
+				margin: 0 14px
+
+
+.advantages
+	min-height: 680px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	&__title
+		font-size: 56px
+		line-height: 64px
+		font-family: "HelveticaNeue", sans-serif
+		font-weight: 100
+		padding-top: 67px
+		padding-bottom: 35px
+		color: #fff
+		font-style: normal
+		+media(sm)
+			font-size: 52px
+		b
+			font-weight: 700
+	&__image
+		margin-top: 35px
+		padding-bottom: 59px
+		img
+			display: block
+	&__wrap
+		display: flex
+		margin-right: -30px	
+		margin-left: -30px	
+		max-width: 585px
+		width: 100%	
+		+media(smx)
+			display: block
+		ul
+			margin-right: 30px
+			margin-left: 30px
+			width: calc(50% - 60px)
+			+media(smx)
+				width: 100%
+
+			li
+				list-style-type: disc
+				list-style-position: inside
+				font-size: 14px
+				line-height: 18px
+				color: #ffffff
+				min-height: 40px
+				margin-bottom: 15px
+				font-family: "LucidaGrande"
+				font-weight: 400
+
+.info
+	min-height: 415px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	&__title
+		max-width: 420px
+		width: 100%
+		font-size: 52px
+		font-weight: 300
+		line-height: 1.1
+		color: #ffffff
+		font-family: "HelveticaNeue"
+		margin-bottom: 45px
+		b
+			font-weight: 800
+			text-transform: uppercase
+	&__wrap
+		padding-top: 85px
+		padding-bottom: 104px
+	&__links
+		display: flex
+		margin-right: -30px
+		margin-left: -30px
+		+media(mdx)
+			display: flex
+			margin: 0px
+			flex-direction: column
+		a
+			max-width: 320px
+			display: inline-block
+			color: #ffffff
+			font-family: 'Roboto'
+			font-size: 16px
+			text-transform: uppercase
+			border-radius: 8px
+			padding: 12px 20px
+			margin-right: 30px
+			margin-left: 30px
+			text-align: center
+			transition: 0.3s background-color
+			+media(mdx)
+				margin: 0px
+				margin-bottom: 25px
+			+media(sm)
+				max-width: 310px
+			&:nth-child(1)
+				background-color: #33d4ed 
+				&:hover
+					background-color: #2495a6
+			&:nth-child(2)
+				background-color: #519cf8
+				&:hover
+					background-color: #3769a6
+
+
+.features
+	background-image: linear-gradient(180deg, #f4feff 0%, #ffffff 100%)
+	&__title
+		max-width: 680px
+		width: 100%
+		color: #000000
+		font-size: 56px
+		line-height: 1.1
+		font-weight: 300
+		font-family: "HelveticaNeue"
+		padding-top: 78px
+		margin-bottom: 50px
+		+media(xs)
+			font-size: 47px
+		b
+			display: block
+			font-weight: 700
+
+	&__subtitle
+		max-width: 460px
+		font-size: 36px
+		line-height: 1	
+		font-weight: 700
+		color: #000000
+		font-family: "HelveticaNeue"
+		margin-bottom: 32px
+		+media(md)
+			max-width: 100%
+
+	&__item
+		display: flex
+		padding-bottom: 85px
+		+media(md)
+			display: block
+		&:nth-child(1) .features__image
+			&:before
+				background-color: #9013fe
+		&:nth-child(2) .features__image
+			&:before
+				background-color: #d0021b
+		&:nth-child(3) .features__image
+			&:before
+				background-color: #ff0000
+		&:nth-child(4) .features__image
+			&:before
+				background-color: #f5a623
+		&:nth-child(5) .features__image
+			&:before
+				background-color: #f8e71c
+		&:nth-child(6) .features__image
+			&:before
+				background-color: #7ed321
+		&:nth-child(7) .features__image
+			&:before
+				background-color: #50e3c2
+	&__image
+		flex-shrink: 0
+		display: flex
+		align-items: center
+		padding-left: 178px
+		padding-right: 98px
+		margin-bottom: 10px
+		width: 400px
+		position: relative
+		+media(md)
+			margin: 0 auto 10px
+			width: auto
+			justify-content: center
+			padding: 0px	
+		img
+			width: auto
+		&:before
+			position: absolute
+			content: ' '
+			width: 2px
+			height: 100%
+			top: 0px
+			bottom: 0px
+			right: 0px
+			+media(md)
+				position: static
+	&__text
+		padding-left: 34px	
+		width: calc(100% - 400px)
+		padding-right: 118px
+		+media(md)
+			width: 100%
+			padding: 0 15px
+		p
+			font-size: 14px
+			line-height: 1.2
+			color: #4a4a4a
+			font-weight: 400
+			font-family: 'Roboto'
+
+.data
+	counter-reset: heading
+	&__title
+		font-size: 56px
+		font-weight: 300
+		font-style: normal
+		line-height: 1.1
+		color: #000000
+		font-family: "HelveticaNeue"
+		padding-top: 65px
+		+media(sm)
+			font-size: 47px
+		b
+			font-weight: 700
+			text-transform: uppercase
+			display: block
+	&__wrap
+		margin-top: 35px
+		margin-bottom: 100px
+	&__item
+		display: flex
+		align-items: center
+		margin-bottom: 35px
+		&:nth-child(1) .data__info
+			background-color: rgba(208, 2, 27, 0.1)
+		&:nth-child(2) .data__info
+			background-color: rgba(245, 166, 35, 0.1)
+		&:nth-child(3) .data__info
+			background-color: rgba(231, 214, 0, 0.1)
+		&:nth-child(4) .data__info
+			background-color: rgba(136, 202, 63, 0.1)
+		&:nth-child(5) .data__info
+			background-color: rgba(74, 144, 226, 0.1)
+		&:nth-child(6) .data__info
+			background-color: rgba(102, 102, 102, 0.1)
+	&__info
+		min-width: 74px
+		min-height: 74px
+		box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35)
+		border: 5px solid #666666
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		&:after
+			counter-increment: heading
+			content: counter(heading)
+			font-size: 36px
+			font-weight: 700
+			color: #4a4a4a
+			font-family: "HelveticaNeue"
+
+	&__text
+		width: calc(100% - 74px)
+		padding-left: 70px
+		+media(sm)
+			padding-left: 12px
+		p
+			font-size: 14px
+			line-height: 1.2
+			color: #4a4a4a
+	&__subtitle
+		font-size: 26px
+		line-height: 1.3
+		color: #000000
+		font-family: "HelveticaNeue"
+		margin-bottom: 5px
+
+.user
+	position: relative
+	background-color: #fff
+	padding-bottom: 120px
+	z-index: 1
+	&__title
+		font-size: 56px
+		font-weight: 300
+		line-height: 1
+		color: #000000
+		font-family: "HelveticaNeue"
+		padding-top: 108px
+		padding-bottom: 64px
+		+media(xs)
+			font-size: 52px
+			padding: 50px 0px
+		b
+			display: block
+	&__item
+		display: flex
+		align-items: center
+		flex-direction: column
+		margin-bottom: 24px
+		+media(sm)
+			position: relative
+			display: block
+			margin-bottom: 12px
+			align-items: stretch
+		label
+			max-width: 225px
+			width: 100%
+			display: block
+			font-size: 20px
+			line-height: 1.2
+			color: #000000
+			text-align: right
+			font-family: "Roboto"
+			font-weight: 200
+			user-select: none
+			+media(sm)
+				text-align: left
+				max-width: 50%
+				margin-bottom: 10px
+		input
+			width: 100%
+			border-radius: 4px
+			background-color: #f0f0f0
+			padding: 6px 18px
+			border: none
+			outline: none
+			font-size: 24px
+			font-weight: 500
+			line-height: 1.5
+			margin-left: 45px
+			color: #000000
+			font-family: 'Roboto'
+			font-weight: bold
+			+media(sm)
+				margin-left: 0px
+			&::placeholder
+				font-size: 24px
+				font-weight: 500
+				line-height: 1.5
+				color: #000000
+			&:focus, &:active
+				cursor: pointer
+				background-color: #519cf8
+				color: #ffffff
+			&:focus::placeholder
+				color: #fff
+	
+	&__button
+		cursor: default
+		margin-left: 271px
+		+media(sm)
+			margin: 0px
+			max-width: 100%
+	&__button[disabled]
+		opacity: 0.5
+		text-decoration: line-through
+	&__button:not(:disabled)
+		&:hover
+			cursor: pointer
+			border-color: #124952
+			background-color: #124952
+	&__box
+		display: flex
+		align-items: center
+		width: 100%
+		+media(sm)
+			flex-direction: column
+			align-items: stretch
+	&__error
+		padding: 6px 0
+		color: #8B0000
+		text-transform: uppercase
+		width: 100%
+		text-align: right
+		font-family: 'Roboto'
+		font-weight: bold
+		+media(sm)
+			position: absolute
+			top: 0
+			right: 0
+			max-width: 50%

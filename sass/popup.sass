@@ -1,0 +1,120 @@
+@import 'responsive'
+
+.menu-overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 10
+	opacity: 0
+	visibility: hidden
+	background-color: rgba(0,0,0,0.5)
+	transition: 0.2s opacity, 0.2s visibility
+	overflow-y: auto
+	overflow-x: hidden
+	&__active
+		opacity: 1
+		visibility: visible
+
+	&__box
+		display: flex
+		margin-bottom: 32px	
+		+media(md)
+			display: block
+		.main-header__logo
+			max-width: 245px
+			width: 100%
+			background-color: #fff
+			+media(md)
+				margin: 0 auto
+
+	&__text
+		font-size: 42px
+		font-weight: 300
+		line-height: 42px
+		color: #ffffff
+		font-family: "HelveticaNeue"
+		margin-left: 45px
+		padding-top: 75px	
+		+media(md)
+			padding-top: 35px
+			margin: 0px
+			text-align: center
+		b
+			font-weight: 700	
+
+
+	&__close
+		position: absolute
+		top: 10px
+		right: 0px
+		width: 30px
+		height: 30px
+		cursor: pointer
+		z-index: 1
+
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			top: 10px
+			left: 3px
+			width: 25px
+			height: 3px
+			background-color: #fff
+
+		&:after
+			transform: rotate(45deg)
+		&:before
+			transform: rotate(-45deg)
+	&__wrap
+		max-width: 845px
+		width: 100%
+		margin: 0 auto
+		position: relative
+	label
+		color: #fff
+		max-width: 245px
+		+media(sm)
+			max-width: 100%
+	.user__button
+		margin-left: 290px	
+		margin-bottom: 20px	
+		+media(sm)
+			margin: 0px
+			margin-bottom: 20px
+	.user__wrap
+		+media(sm)
+			margin-right: 10px	
+			margin-left: 10px	
+	.user__error
+		color: #f70000
+		text-shadow: 1px 1px 2px black, 0 0 1em black
+
+.menu__open
+	filter: blur(10px)
+
+header, footer, section
+	transition: 0.2s filter
+
+.msg-modal
+	position: fixed
+	top: 40%
+	left: calc(50% - 150px)
+	width: 300px
+	padding: 20px 40px
+	text-align: center
+	background-color: rgba(#3769a6, 0.95)
+	color: #fff
+	opacity: 0
+	visibility: hidden
+	font-size: 18px
+	line-height: 1.5
+	border-radius: 5px
+	z-index: 30
+	transition: 0.3s visibility, 0.3s opacity
+
+	&-active
+		visibility: visible
+		opacity: 1
