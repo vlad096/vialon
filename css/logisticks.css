@@ -1,0 +1,136 @@
+.capability--logisticks .capability__subtitle:after {
+	background-color: #7ed321;
+}
+
+.capability--mob {
+	background-color: #fff;
+}
+
+.capability--mob .capability__subtitle {
+	min-height: 85px;
+}
+
+.capability--mob .capability__item {
+	width: calc(100% / 5 - 60px);
+}
+
+.planning__title {
+	font-size: 55px;
+	font-weight: 100;
+	line-height: 64px;
+	color: #000000;
+	font-family: "HelveticaNeue";
+	padding-top: 60px;
+	padding-bottom: 54px;
+}
+
+.planning__title b {
+	font-weight: 700;
+}
+
+.planning__wrap {
+	display: flex;
+	align-items: center;
+	max-width: 980px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.planning__item {
+	width: calc(100% / 3 - 40px);
+	position: relative;
+	padding-left: 30px;
+	color: #000000;
+	font-size: 24px;
+	line-height: 26px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-weight: 100;
+	font-family: "HelveticaNeue";
+	display: flex;
+	flex-direction: column;
+}
+
+.planning__item:after {
+	position: absolute;
+	content: ' ';
+	border: 60px solid transparent;
+	border-left: 120px solid  #d8d8d8;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+.planning__item b {
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+}
+
+.planning__image {
+	margin-top: 70px;
+}
+
+.planning__image img {
+	display: block;
+	width: 100%;
+}
+
+.logisticks--wrap {
+	position: relative;
+}
+
+.logisticks--image {
+	right: 0px;
+}
+
+@media screen and (max-width: 1050px) {
+
+.capability--mob .capability__item {
+	width: calc(100% / 3 - 60px);
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+.capability--mob .capability__subtitle {
+	min-height: 64px;
+}
+
+.capability--mob .capability__item {
+	width: calc(100% / 2 - 60px);
+}
+
+}
+
+@media screen and (max-width: 840px) {
+
+.planning__wrap {
+	display: block;
+}
+
+.planning__item {
+	margin-bottom: 70px;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+.capability--logisticks .capability__subtitle {
+	min-height: auto;
+}
+
+.capability--mob .capability__subtitle {
+	min-height: auto;
+}
+
+.capability--mob .capability__item {
+	width: 100%;
+}
+
+}
+

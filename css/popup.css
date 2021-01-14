@@ -1,0 +1,165 @@
+.menu-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 0.2s opacity, 0.2s visibility;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.menu-overlay__active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu-overlay__box {
+	display: flex;
+	margin-bottom: 32px;
+}
+
+.menu-overlay__box .main-header__logo {
+	max-width: 245px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.menu-overlay__text {
+	font-size: 42px;
+	font-weight: 300;
+	line-height: 42px;
+	color: #ffffff;
+	font-family: "HelveticaNeue";
+	margin-left: 45px;
+	padding-top: 75px;
+}
+
+.menu-overlay__text b {
+	font-weight: 700;
+}
+
+.menu-overlay__close {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.menu-overlay__close:after,
+.menu-overlay__close:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 3px;
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+}
+
+.menu-overlay__close:after {
+	transform: rotate(45deg);
+}
+
+.menu-overlay__close:before {
+	transform: rotate(-45deg);
+}
+
+.menu-overlay__wrap {
+	max-width: 845px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.menu-overlay label {
+	color: #fff;
+	max-width: 245px;
+}
+
+.menu-overlay .user__button {
+	margin-left: 290px;
+	margin-bottom: 20px;
+}
+
+.menu-overlay .user__error {
+	color: #f70000;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.menu__open {
+	filter: blur(10px);
+}
+
+header,
+footer,
+section {
+	transition: 0.2s filter;
+}
+
+.msg-modal {
+	position: fixed;
+	top: 40%;
+	left: calc(50% - 150px);
+	width: 300px;
+	padding: 20px 40px;
+	text-align: center;
+	background-color: rgba(55, 105, 166, 0.95);
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	font-size: 18px;
+	line-height: 1.5;
+	border-radius: 5px;
+	z-index: 30;
+	transition: 0.3s visibility, 0.3s opacity;
+}
+
+.msg-modal-active {
+	visibility: visible;
+	opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+
+.menu-overlay__box {
+	display: block;
+}
+
+.menu-overlay__box .main-header__logo {
+	margin: 0 auto;
+}
+
+.menu-overlay__text {
+	padding-top: 35px;
+	margin: 0px;
+	text-align: center;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.menu-overlay label {
+	max-width: 100%;
+}
+
+.menu-overlay .user__button {
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+.menu-overlay .user__wrap {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+}
+

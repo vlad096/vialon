@@ -119,8 +119,6 @@ $(document).ready(function() {
         
     }
 
-    $('select').styler();
-
     $('input[type="tel"]').mask("+38 (999) 999-99-99");
 
     var regName = /^[a-zA-Zа-яА-ЯёЁ]+/;

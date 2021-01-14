@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Vialon</title>
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">	
-	<link rel="stylesheet" href="css/jquery.formstyler.css">
-	<link rel="apple-touch-icon" sizes="192x192" href="favicon.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+
 	<meta name="theme-color" content="#fcc02e">
 	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,10 +50,10 @@
 			                    <li id="qtranslate-3" class="widget qtranxs_widget">
 			                        <ul class="language-chooser language-chooser-text qtranxs_language_chooser" id="qtranslate-3-chooser">
 			                            <li class="lang-ua">
-			                                <a href="" hreflang="ua" title="Рус (ua)" class="qtranxs_text qtranxs_text_гф"><span>Ua</span></a>
+			                                <a href="" lang="ua" title="Рус (ua)" class="qtranxs_text qtranxs_text_ua"><span>Ua</span></a>
 			                            </li>
 			                            <li class="lang-ru active">
-			                                <a href="" hreflang="ru" title="Рус (ru)" class="qtranxs_text qtranxs_text_ru"><span>Ru</span></a>
+			                                <a href="" lang="ru" title="Рус (ru)" class="qtranxs_text qtranxs_text_ru"><span>Ru</span></a>
 			                            </li>
 			                        </ul>
 			                        <div class="qtranxs_widget_end"></div>
@@ -355,7 +353,7 @@
 			<h3 class="user__title">Узнайте цену и закажите <b>тестовую версию Wialon</b></h3>
 		</div>
 		<div class="container container--user">
-			<form class="user__wrap" action="">
+			<form class="user__wrap">
 				<div class="user__item">
 					<p class="user__error user__fail-fio" style="display: none">Некоректное имя и фамилия</p>
 					<div class="user__box">	
@@ -371,24 +369,7 @@
 						<input id="c__company" name="company" type="text" placeholder="EnterName">
 					</div>
 				</div>
-				<div class="user__item">
-					<!-- <p class="user__error user__fail-country" style="display: none">Некоректная страна</p> -->
-					<div class="user__box">	
-						<label for="c__country">Страна</label>
-						<select name="c__country" id="c__country" data-smart-positioning="false">
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-							<option value="1">Lorem ipsum dolor.</option>
-						</select>
-					</div>
-				</div>
+
 				<div class="user__item">
 					<p class="user__error user__fail-city" style="display: none">Некоректный город</p>
 					<div class="user__box">	
@@ -414,7 +395,7 @@
 					<p class="user__error user__fail-object" style="display: none">Некоректное количество объектов</p>
 					<div class="user__box">	
 						<label for="c__object">Планируемое количество объектов мониторинга</label>
-						<input id="c__object" id="object" type="text">
+						<input id="c__object" type="text">
 					</div>
 				</div>
 				<div class="user__item">

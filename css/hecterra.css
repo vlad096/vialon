@@ -1,0 +1,13 @@
+.hecterra .work__item {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.hecterra .reason__block:after {
+	background: radial-gradient(circle, #666666 25%, #cccccc 25%, #cccccc 41%, #f0f7c3 41%, #f0f7c3 58%, #fefad2 58%);
+}
+
+.hecterra .capability__subtitle:after {
+	background-color: #10c29a;
+}
+
